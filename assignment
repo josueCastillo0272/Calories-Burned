@@ -1,0 +1,14 @@
+# Introduce functionality of program
+print("Hello, this is a calculator that approximates the amount of calories burned from exercise! \n")
+
+# Prompt for age, weight, heart rate, time
+age = int(input("Please input your Age: "))
+weight = int(input("Please input your Weight: "))
+heartRate = int(input("Please input your Heart Rate: "))
+time = int(input("Please input the time you spent working out: "))
+
+# Calculate calories based on found values
+calories = ((age*0.2757) + (weight*0.03295) + (heartRate*1.0781) - 75.4991) *time / 8.368 
+
+#Print calories
+print(f'Calories: {calories:.2f} calories')
